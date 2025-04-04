@@ -267,6 +267,7 @@ legend {
   color: rgb(165, 26, 10);
 }
 input {
+  width: 100%;
   flex-grow: 1;
   flex-shrink: 1;
   padding: 5px;
