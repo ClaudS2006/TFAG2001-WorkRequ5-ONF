@@ -225,6 +225,12 @@ svg {
 .playBtn:focus {
   outline: 2px solid #007bff;
 }
+.fa-solid fa-play {
+  color: #f4f5f6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 /* --------- BOOK A TABLE FORM ----------------------------- */
 #book-a-table {
   display: flex;
@@ -360,9 +366,7 @@ input[type="checkbox"] {
   text-align: center;
   color: #262323;
 }
-i {
-  margin: 0.5em;
-}
+
 .social-media a {
   color: #262323;
   text-decoration: none;
