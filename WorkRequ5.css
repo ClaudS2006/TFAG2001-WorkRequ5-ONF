@@ -87,6 +87,7 @@ header {
 /* restaurant navigation */
 .hamburger {
   display: none; /* hidden on large screens > 768px */
+  color: black;
   font-size: 2rem;
   background: none;
   border: none;
@@ -288,6 +289,7 @@ input[type="checkbox"] {
 }
 #form-btn {
   background-color: #b8e3dc;
+  color: black;
   font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 0.25rem;
