@@ -6,9 +6,12 @@
   --font-color-on-light-ground: #262323;
   --border-color-navigation: #262323;
   --font-color-on-dark-ground: white;
-  --svg-first-color: #DDF2D8;
-  --button-send-color: #DDF2D8;
+  --svg-pink-color: #ffbfc5;
+  --svg-blue-color: #b8e3dc
+  --button-send-color: #cc2938;
   --svg-second-color: #ffbfc5;
+  --contact-btn-color: #fc3256;
+  --back-to-top-button-color: #0c481a; 
 } */
 *,
 *::before,
@@ -118,7 +121,7 @@ svg {
 }
 .fusion-container p {
   color: white;
-  font-size: clamp(0.8rem, 2vw, 1.15rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   width: 75vw;
   position: relative;
   left: 12.5%;
@@ -255,7 +258,7 @@ input[type="checkbox"] {
   margin: 0.7em 0.4em;
 }
 #form-btn {
-  background-color: #ddf2d8;
+  background-color: #b8e3dc;
   font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 0.25rem;
@@ -285,6 +288,9 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: 2px solid #6b4939;
+  border-radius: 12px;
+  margin: 1em;
 }
 .accordionBtn {
   display: none; /* hidden on large screens > 768px */
@@ -331,7 +337,7 @@ i {
   color: #3329bd;
   text-decoration: underline;
 }
-/* style FABs */
+/* style FABs ---------------------------------------------------- */
 .fab {
   position: fixed;
   bottom: 20px;
@@ -360,13 +366,14 @@ i {
 }
 /* style back to top button */
 #backToTop {
-  background-color: #1b7931;
+  background-color: #0c481a;
   cursor: pointer;
+  font-weight: 800;
 }
 
 /* style contact button */
 #contactBtn {
-  background-color: #dc3545;
+  background-color: #fc3256;
   cursor: pointer;
   bottom: 100px; /* space between buttons */
 }
@@ -428,7 +435,6 @@ i {
   #form-btn {
     font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.25;
     width: 50%;
     height: 3.5em;
   }
@@ -476,6 +482,7 @@ i {
   .navigation-list.open {
     display: flex;
     width: 100%;
+    top: 40px;
   }
   .navigation-link:not(:last-child) {
     border-right: transparent;
