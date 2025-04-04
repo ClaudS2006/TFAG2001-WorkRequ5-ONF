@@ -225,7 +225,7 @@ svg {
 .playBtn:focus {
   outline: 2px solid #007bff;
 }
-.fa-solid fa-play {
+.fa-solid {
   color: #f4f5f6;
   display: inline-flex;
   align-items: center;
