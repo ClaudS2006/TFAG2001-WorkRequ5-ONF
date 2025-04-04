@@ -9,6 +9,17 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
   padding-top: env(safe-area-inset-top);
 }
+*,
+*::before,
+*::after {
+overscroll-behavior: contain;
+}
+html {
+  touch-action: manipulation;
+}
+@media (prefers-color-scheme: no-preference) {
+   neutrale Theme 
+}
 
  :root {
   --background-light-color: #F2F2F2;
@@ -24,11 +35,15 @@ body {
   --contact-btn-color: #fc3256;
   --back-to-top-button-color: #0c481a; 
 } */
+html {
+  touch-action: manipulation;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overscroll-behavior: contain;
 }
 body {
   font-family: Marcellus, Calibri, Arial, sans-serif;
@@ -400,6 +415,9 @@ i {
 
 /* MEDIA QUERIES */
 
+@media (prefers-color-scheme: no-preference) {
+  /* neutrale theme */
+}
 @media (max-width: 480px) {
   /* smartphones */
   .rest-name {
