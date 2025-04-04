@@ -1,210 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Timeless tradition infused with futuristic flavors
-    - an exceptional culinary experience." />
-    <link rel="icon" href="https://res.cloudinary.com/debsbal9c/image/upload/v1742123139/hub_24dp_FFFFFF_FILL0_wght200_GRAD0_opsz24_oaaney.svg" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Timeless tradition infused with futuristic flavors
+    - an exceptional culinary experience."
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/debsbal9c/image/upload/v1742123139/hub_24dp_FFFFFF_FILL0_wght200_GRAD0_opsz24_oaaney.svg"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="WorkRequ5.js" defer></script>
-    <link rel="stylesheet" href="WorkRequ5.css">
+    <link rel="stylesheet" href="WorkRequ5.css" />
     <title>Fusion</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- HEADER -->
-    <header> 
-        <!-- skip links for faster accessibility, only visible on focus -->
-        <nav class="skip-link" role="navigation">
-            <a href="#main"> Skip to main content</a>, 
-            <a href="#book-a-table">Go directly to Book a table</a> 
-            <a href="#contact-us">Jump to our contact info</a>
-        </nav>       
-        <h1 class="rest-name">Fusion</h1>
-        <!-- NAVIGATION -->
-        <nav class="rest-navigation" role="navigation">
-            <button class="hamburger" aria-expanded="false" aria-label="open-menu">☰</button>
-            <ul class="navigation-list">
-                <li class="navigation-link"><a class="nav-link" href="#food-and-drinks">Food & Drinks</a></li>
-                <li class="navigation-link"><a class="nav-link" href="#book-a-table">Book a table</a></li>
-                <li class="navigation-link"><a class="nav-link" href="#contact-us">Contact us</a></li>
-            </ul>
-        </nav>
+    <header>
+      <!-- skip links for faster accessibility, only visible on focus -->
+      <nav class="skip-link" role="navigation">
+        <a href="#main"> Skip to main content</a>,
+        <a href="#book-a-table">Go directly to Book a table</a>
+        <a href="#contact-us">Jump to our contact info</a>
+      </nav>
+      <h1 class="rest-name">Fusion</h1>
+      <!-- NAVIGATION -->
+      <nav class="rest-navigation" role="navigation">
+        <button class="hamburger" aria-expanded="false" aria-label="open-menu">
+          ☰
+        </button>
+        <ul class="navigation-list">
+          <li class="navigation-link">
+            <a class="nav-link" href="#food-and-drinks">Food & Drinks</a>
+          </li>
+          <li class="navigation-link">
+            <a class="nav-link" href="#book-a-table">Book a table</a>
+          </li>
+          <li class="navigation-link">
+            <a class="nav-link" href="#contact-us">Contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- MAIN -->
     <main id="main">
-        <!-- WELCOME SECTION -->
-        <section id="welcome" aria-labelledby="welcome-title">
-            <div class="fusion-container">
-                <svg viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
-                    <path class="line1" d="M 0 100 Q 250 50, 500 100 T 1000 100" stroke="#b8e3dc" stroke-width="6" fill="transparent"/>
-                    <path class="line2" d="M 0 120 Q 250 170, 500 120 T 1000 120" stroke="#ffbfc5" stroke-width="4" fill="transparent"/>
-                </svg>
-                <p>Welcome to <strong>Fusion</strong> - Where Tradition Meets the Taste of Tomorrow. <br><br>
-                    At Fusion, we honor the rich flavors of tradition while embracing the innovations
-                    of the future. Every dish is a carefully crafted blend of time-honored recipes
-                    and modern culinary artistry, bringing you an unforgettable dining experience.
-                    Join us on a journey where heritage and creativity come together on every plate. <br><br>
-                    <em>Welcome to the future of flavor!</em>
-                </p>      
-            </div>   
-        </section>
-        <!-- FOODS & DRINKS DISPLAY -->
-        <section id="food-and-drinks">
-            <h2 id="intro-showcase">Fusions signature dishes</h2>
-            <div class="menu-showcase">
-                <!-- DISH 1 -->
-                <div class="single-item">
-                    <h2>Spicy Chicken Legs Kambodia </h2>
-                    <p>Traditional Chicken legs, stir-fried & sauteed in a home-made Sauce
-                        from Taiwan.
-                    </p>
-                    <video class="video" muted>
-                    <source src="https://cdn.pixabay.com/video/2017/08/30/11718-231759052_large.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <button class="playBtn" aria-label="Video abspielen" aria-hidden="true">▶</button>
-                </div>
-                <!-- DISH 2 -->
-                <div class="single-item">
-                    <h2>Prawn Salad Dancing Tiger</h2>
-                    <p>Tiger Shrimps served with an eclectic range of spices & vegetables from the Orient.
-                    </p>
-                    <video class="video" muted>
-                    <source src="https://cdn.pixabay.com/video/2017/08/30/11659-231758756_large.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <button class="playBtn" aria-label="Video abspielen" aria-hidden="true">▶</button>
-                </div>
-                <!-- DISH 3 -->
-                <div class="single-item">
-                    <h2>Balinese Style Stir Fried Pork Belly</h2>
-                    <p>A savory & slightly sweet dish with crispy pork belly in a rich Balinese-inspired sauce.
-                    </p>
-                    <video class="video" muted>
-                    <source src="https://cdn.pixabay.com/video/2017/08/30/11708-231759009_large.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <button class="playBtn" aria-label="Video abspielen" aria-hidden="true">▶</button>
-                </div>
+      <!-- WELCOME SECTION -->
+      <section id="welcome" aria-label="welcome-to-fusion">
+        <div class="fusion-container">
+          <svg viewBox="0 0 1000 200" preserveAspectRatio="xMidYMid meet">
+            <path
+              class="line1"
+              d="M 0 100 Q 250 50, 500 100 T 1000 100"
+              stroke="#b8e3dc"
+              stroke-width="6"
+              fill="transparent"
+            />
+            <path
+              class="line2"
+              d="M 0 120 Q 250 170, 500 120 T 1000 120"
+              stroke="#ffbfc5"
+              stroke-width="4"
+              fill="transparent"
+            />
+          </svg>
+          <p>
+            Welcome to <strong>Fusion</strong> - Where Tradition Meets the Taste
+            of Tomorrow. <br /><br />
+            At Fusion, we honor the rich flavors of tradition while embracing
+            the innovations of the future. Every dish is a carefully crafted
+            blend of time-honored recipes and modern culinary artistry, bringing
+            you an unforgettable dining experience. Join us on a journey where
+            heritage and creativity come together on every plate. <br /><br />
+            <em>Welcome to the future of flavor!</em>
+          </p>
+        </div>
+      </section>
+      <!-- FOODS & DRINKS DISPLAY -->
+      <section id="food-and-drinks">
+        <h2 id="intro-showcase">Fusions signature dishes</h2>
+        <div class="menu-showcase">
+          <!-- DISH 1 -->
+          <div class="single-item">
+            <h2>Spicy Chicken Legs Kambodia</h2>
+            <p>
+              Traditional Chicken legs, stir-fried & sauteed in a home-made
+              Sauce from Taiwan.
+            </p>
+            <video class="video" muted>
+              <source
+                src="https://cdn.pixabay.com/video/2017/08/30/11718-231759052_large.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="playBtn"
+              aria-label="Video abspielen"
+              aria-hidden="true"
+            >
+              ▶
+            </button>
+          </div>
+          <!-- DISH 2 -->
+          <div class="single-item">
+            <h2>Prawn Salad Dancing Tiger</h2>
+            <p>
+              Tiger Shrimps served with an eclectic range of spices & vegetables
+              from the Orient.
+            </p>
+            <video class="video" muted>
+              <source
+                src="https://cdn.pixabay.com/video/2017/08/30/11659-231758756_large.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="playBtn"
+              aria-label="Video abspielen"
+              aria-hidden="true"
+            >
+              ▶
+            </button>
+          </div>
+          <!-- DISH 3 -->
+          <div class="single-item">
+            <h2>Balinese Style Stir Fried Pork Belly</h2>
+            <p>
+              A savory & slightly sweet dish with crispy pork belly in a rich
+              Balinese-inspired sauce.
+            </p>
+            <video class="video" muted>
+              <source
+                src="https://cdn.pixabay.com/video/2017/08/30/11708-231759009_large.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              class="playBtn"
+              aria-label="Video abspielen"
+              aria-hidden="true"
+            >
+              ▶
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- BOOK A TABLE SECTION -->
+      <section id="book-a-table">
+        <h2 class="heading-booking">Book a table:</h2>
+        <form id="details" action="#">
+          <fieldset class="guest-info">
+            <legend id="personal-info">Personal Information</legend>
+            <!-- full name -->
+            <label for="fullName">Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Luna Lovejoy"
+              aria-labelledby="fullName"
+              required
+            />
+            <!-- phone number -->
+            <label for="telNumber">Telefon:</label>
+            <input
+              type="tel"
+              pattern="\+47\s\d{2}\s\d{2}\s\d{2}\s\d{2}"
+              id="telNumber"
+              name="telNumber"
+              placeholder="+47 12 34 56 45"
+              aria-labelledby="telNumber"
+              required
+            />
+            <!-- confirmation email -->
+            <label for="email">E-Mail:</label>
+            <input
+              type="email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              aria-labelledby="email"
+              required
+            />
+          </fieldset>
+          <fieldset class="res-info">
+            <legend id="res-legend">Reservation Details</legend>
+            <!-- number of guests -->
+            <label for="numGuests">Number of guests:</label>
+            <input
+              type="number"
+              id="numGuests"
+              name="numGuests"
+              placeholder="Max. 25 guests"
+            />
+
+            <!-- date -->
+            <label for="resDate">Reservation Date:</label>
+            <input type="date" id="resDate" name="resDate" required />
+
+            <!-- time -->
+            <label for="timeRes">Reservation Time:</label>
+            <input type="time" id="timeRes" name="timeRes" required />
+
+            <!-- special requests -->
+            <label for="requests">Special Requests:</label>
+            <textarea
+              id="requests"
+              name="requests"
+              rows="3"
+              cols="50"
+              placeholder="Please enter your message:"
+              maxlength="50"
+            ></textarea>
+
+            <!-- terms & conditions -->
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I accept the
+                <a href="https://google.com">terms and conditions</a></label
+              >
             </div>
-        </section>
-        <!-- BOOK A TABLE SECTION -->
-        <section id="book-a-table">
-            <h2 class="heading-booking">Book a table:</h2>
-            <form id="details" action="#">
-                <fieldset class="guest-info">
-                    <legend id="personal-info">Personal Information</legend>
-                    <!-- full name -->
-                    <label for="fullName">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Luna Lovejoy" aria-labelledby="fullName"required> 
-                    <!-- phone number -->
-                    <label for="telNumber">Telefon:</label>
-                        <input type="tel" pattern="\+47\s\d{2}\s\d{2}\s\d{2}\s\d{2}" id="telNumber" name="telNumber" placeholder="+47 12 34 56 45" aria-labelledby="telNumber" required>
-                    <!-- confirmation email -->
-                    <label for="email">E-Mail:</label>
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="email" placeholder="example@gmail.com" aria-labelledby="email" required>
-                </fieldset>
-                <fieldset class="res-info">
-                    <legend id="res-legend">Reservation Details</legend>
-                    <!-- number of guests -->
-                    <label for="numGuests">Number of guests:</label>
-                        <input type="number" id="numGuests" name="numGuests" placeholder="Max. 25 guests">
-                    
-                    <!-- date -->
-                    <label for="resDate">Reservation Date:</label>
-                        <input type="date" id="resDate" name="resDate" required>
-                    
-                    <!-- time -->
-                    <label for="timeRes">Reservation Time:</label>
-                        <input type="time" id="timeRes" name="timeRes" required>
-                    
-                    <!-- special requests -->
-                     <label for="requests">Special Requests:</label>
-                     <textarea id="requests" name="requests" rows="3" cols="50"
-                     placeholder="Please enter your message:" maxlength="50"></textarea>
-                    
-                     <!-- terms & conditions -->
-                    <div class="terms">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">I accept the <a href="https://google.com">terms and conditions</a></label>   
-                    </div>
-                    <!-- button send -->
-                    <button id="form-btn" type="submit">Send</button>
-                    <p id="message" role="alert" aria-live="polite">Formular erfolgreich abgeschickt! 🎉</p>
-                    <p id="reservation-details"></p>
-                </fieldset>
-            </form>
-        </section >
+            <!-- button send -->
+            <button id="form-btn" type="submit">Send</button>
+            <p id="message" role="alert" aria-live="polite">
+              Formular erfolgreich abgeschickt! 🎉
+            </p>
+            <p id="reservation-details"></p>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <!-- CONTACT US / FOOTER -->
     <footer id="contact-us">
-        <h2 class="rest-name">Fusion</h2>
-        <button class="accordionBtn" aria-hidden="true" aria-label="visitor-address">Visit us</button>
-        <section class="address">
-            <h3>Visit us:</h3>
-            <div class="panel">
-                <p class="info">
-                    Future Road 2099
-                    <br>
-                    4099 Tradi City
-                    <br>
-                    Tomorrow Land
-                </p>
-            </div>
-        </section>
-        <button class="accordionBtn" aria-hidden="true" aria-label="telephone-and-email">Get in Touch</button>
-        <section class="telephone">
-            <h3>Get in Touch:</h3>
-            <div class="panel">  
-                <p class="info">
-                    <!-- add telefon link -->
-                    Tel: +47 12 23 45 67
-                    <br>
-                    Mobile: + 47 47 48 49 46
-                    <br>
-                    <!-- add mail link to google -->
-                    EMail: contact@fusion.com
-                </p>
-            </div>
-        </section>
-        <button class="accordionBtn" aria-hidden="true" aria-label="opening-hours">Opening hours</button>
-        <section class="opening">
-            <h3>Opening hours:</h3>
-            <div class="panel">
-                <p class="info">
-                    Monday: Closed
-                    <br>
-                    Tuesday - Thursday: 11 - 23
-                    <br> 
-                    Friday - Sunday: 14 - 1
-                </p>
-            </div>
-        </section>
-        <button class="accordionBtn" aria-hidden="true" aria-label="social-media-links">Follow us</button>
-        <section class="social-media">
-            <h3>Follow us:</h3>
-            <div class="panel">
-                <p class="info">
-                    <i class="fa-brands fa-instagram"></i>
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    <br>
-                    <i class="fa-brands fa-twitter"></i>
-                    <a href="https://x.com/" target="_blank">Twitter</a>
-                    <br>
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dde_DE" target="_blank">Facebook</a>
-                </p>
-            </div>
-        </section>
-    </footer>  
+      <h2 class="rest-name">Fusion</h2>
+      <button
+        class="accordionBtn"
+        aria-hidden="true"
+        aria-label="visitor-address"
+      >
+        Visit us
+      </button>
+      <section class="address">
+        <h3>Visit us:</h3>
+        <div class="panel">
+          <p class="info">
+            Future Road 2099
+            <br />
+            4099 Tradi City
+            <br />
+            Tomorrow Land
+          </p>
+        </div>
+      </section>
+      <button
+        class="accordionBtn"
+        aria-hidden="true"
+        aria-label="telephone-and-email"
+      >
+        Get in Touch
+      </button>
+      <section class="telephone">
+        <h3>Get in Touch:</h3>
+        <div class="panel">
+          <p class="info">
+            <!-- add telefon link -->
+            Tel: +47 12 23 45 67
+            <br />
+            Mobile: + 47 47 48 49 46
+            <br />
+            <!-- add mail link to google -->
+            EMail: contact@fusion.com
+          </p>
+        </div>
+      </section>
+      <button
+        class="accordionBtn"
+        aria-hidden="true"
+        aria-label="opening-hours"
+      >
+        Opening hours
+      </button>
+      <section class="opening">
+        <h3>Opening hours:</h3>
+        <div class="panel">
+          <p class="info">
+            Monday: Closed
+            <br />
+            Tuesday - Thursday: 11 - 23
+            <br />
+            Friday - Sunday: 14 - 1
+          </p>
+        </div>
+      </section>
+      <button
+        class="accordionBtn"
+        aria-hidden="true"
+        aria-label="social-media-links"
+      >
+        Follow us
+      </button>
+      <section class="social-media">
+        <h3>Follow us:</h3>
+        <div class="panel">
+          <p class="info">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <br />
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://x.com/" target="_blank">Twitter</a>
+            <br />
+            <i class="fa-brands fa-facebook"></i>
+            <a
+              href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dde_DE"
+              target="_blank"
+              >Facebook</a
+            >
+          </p>
+        </div>
+      </section>
+    </footer>
     <!-- Back to Top Button -->
     <button id="backToTop" aria-label="Back to top" class="fab">↑</button>
     <!-- Contact Button -->
-    <button id="contactBtn" aria-label="Contact us" class="fab">✉</button>  
-</body>
+    <button id="contactBtn" aria-label="Contact us" class="fab">✉</button>
+  </body>
 </html>
