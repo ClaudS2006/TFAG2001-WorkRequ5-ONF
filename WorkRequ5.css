@@ -1,0 +1,554 @@
+/* ----------- General Styles ------------------------- */
+/* :root {
+  --background-light-color: #F2F2F2;
+  --light-gradient-background-color: #6b4939;
+  --dark-gradient-background-color: #262323;
+  --font-color-on-light-ground: #262323;
+  --border-color-navigation: #262323;
+  --font-color-on-dark-ground: white;
+  --svg-first-color: #DDF2D8;
+  --button-send-color: #DDF2D8;
+  --svg-second-color: #ffbfc5;
+} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Marcellus, Calibri, Arial, sans-serif;
+  font-size: clamp(1rem, 1vw, 1.25rem);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* ------ Header ---------------------------------------- */
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 100%; 
+}
+/* skip links for accessibility */
+.skip-link {
+  background: #DDF2D8;
+  color: #F2F2F2;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+.skip-link:focus-within,
+.skip-link:focus {
+  transform: translateY(0%);
+}
+/* restaurant name */
+.rest-name {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #262323;
+  padding-right: 10px;
+  margin-left: 15px;
+}
+/* restaurant navigation */
+.hamburger {
+  display: none; /* hidden on large screens > 768px */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger:focus {
+  outline: 3px solid #f2f2f2;
+}
+.rest-navigation {
+  display: inline-flex;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navigation-link {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.navigation-link:not(:last-child) {
+  border-right: 3px solid #262323;
+}
+.navigation-link:focus {
+  outline: 2px solid #ff6600;
+}
+.nav-link {
+  color: #262323;
+  font-weight: bolder;
+  margin: 1.2em;
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  background-color: rgba(253, 157, 167, 0.5);
+}
+.nav-link:focus {
+  outline: 2px solid #ff6600;
+}
+/* ------------------------- MAIN ----------------------- */
+/* ---- Welcome Animation ------------------------------------------------ */
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to left, rgba(53, 48, 48, 0.9), #6b4939);
+}
+/* hero banner animation */
+.fusion-container {
+  position: relative;
+  width: 100%; 
+  min-height: 40vh;
+  overflow: hidden;
+}
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.fusion-container p {
+  color: white;
+  font-size: clamp(0.8rem, 2vw, 1.15rem);
+  width: 75vw;
+  position: relative;
+  left: 12.5%;
+  z-index: 10;
+}
+/* ------------ FOODS AND DRINKS ------------ */
+#food-and-drinks {
+  margin: 5em;
+}
+#intro-showcase {
+  color: #262323;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.menu-showcase {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.single-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5em;
+  background-image: linear-gradient(to left, rgba(53, 48, 48, 0.9), #6b4939);
+  border: 2px solid #F2F2F2;
+  border-radius: 12px;
+  outline: 10px solid rgba(245, 94, 109, 0.5);
+  outline-offset: 5px;
+}
+.single-item p,
+.single-item h2 {
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
+}
+.single-item video {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  transition: box-shadow 0.3s ease-in-out;
+  border: 2px solid #F2F2F2;
+  background-color: transparent;
+  margin-bottom: 1.5em;
+  padding: 0;
+  border-radius: 12px;
+  width: 50%;
+}
+.single-item video:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.6);
+}
+.playBtn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: none;
+}
+.playBtn:focus {
+  outline: 2px solid #007BFF;
+}
+/* --------- BOOK A TABLE FORM ----------------------------- */
+#book-a-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, rgba(53, 48, 48, 0.9), #6b4939);
+}
+.heading-booking {
+  color: white;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+#details {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  line-height: 1.5;
+  margin-bottom: 3em;
+}
+.guest-info,
+.res-info{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  border-radius: 12px;
+}
+legend {
+  letter-spacing: 0.15rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight:700;
+}
+#details label {
+  color: white;
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  letter-spacing: 0.15rem;
+  padding: 5px;
+}
+#details label::after {
+  content: " *";
+  color: rgb(165, 26, 10);
+}
+input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px;
+}
+input:focus {
+  outline: 2px solid rgb(165, 26, 10);
+  outline-offset: 3px;
+}
+textarea ::placeholder{
+  color: black;
+}
+textarea:focus {
+  outline: 2px solid rgb(165, 26, 10);
+  outline-offset: 3px;
+}
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 0.7em 0.4em;
+}
+#form-btn {
+  background-color: #DDF2D8;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.25rem;
+  align-self: center;
+  width: 25%;
+  height: 2.5em;
+  margin: 1em;
+  cursor: pointer;
+  border-radius: 12px;
+}
+#form-btn:hover {
+  background-color: #147a2e;
+}
+#form-btn:focus {
+  outline: 2px solid #dcdcdc;
+}
+/* Confirmation Message */
+#message {
+  font-size: 1.25rem;
+  color: rgb(30, 183, 30);
+  display: none;
+  align-self: center;
+}
+/* ------------ Footer ---------------------------------- */
+
+#contact-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.accordionBtn {
+    display: none; /* hidden on large screens > 768px */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.accordionBtn:focus {
+  outline: 2px solid #f2f2f2;
+}
+.address,
+.telephone,
+.opening,
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 20%;
+  margin: 15px;
+}
+.telephone,
+.address,
+.opening,
+.social-media h3 {
+  font-weight: bolder;
+}
+.info{
+  text-align: center;
+  color: #262323;
+}
+i {
+  margin: 0.5em;
+}
+.social-media a {
+  color: #262323;
+  text-decoration: none;
+}
+.social-media a:hover {
+  color: #3329bd;
+  text-decoration: underline;
+}
+/* style FABs */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #007bff; /* fallback color */
+  color: white;
+  font-size: clamp(1.5rem, 1vw, 0.5rem);
+  font-weight: bold;
+  text-align: center;
+  line-height: 23px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* button inital state */
+  visibility: hidden; /* button invisible */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.fab.show {
+  opacity: 1;
+  visibility: visible;
+}
+.fab:focus {
+  outline: 2px solid #F2F2F2;
+}
+/* style back to top button */
+#backToTop {
+  background-color: #1b7931; 
+  cursor: pointer;
+}
+
+/* style contact button */
+#contactBtn {
+  background-color: #dc3545;
+  cursor: pointer;
+  bottom: 100px; /* space between buttons */
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+  /* smartphones */
+  .rest-name {
+    margin-left: 0; 
+    padding-right: 0;
+  }
+  .fusion-container {
+    min-height: 25vh;
+  }
+  .fusion-container p {
+    width: 90vw; /* lees space left/right on small screens */
+    left: 5%;
+  }
+  #food-and-drinks {
+    margin: 2em; /* Kompakter */
+  }
+  .single-item {
+    padding: 1em;
+    margin: 0.5em;
+  }
+  .single-item video {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  .single-item p,
+  .single-item h2 {
+    width: 80%;
+  }
+  .playBtn {
+    font-size: 1.2rem; /* Kleinere Schrift für enge Layouts */
+    width: 35px;
+    height: 35px;
+  }
+  .guest-info {
+      min-width: 0;
+      width: 100%;
+      flex-shrink: 1.2;
+      margin: 0; 
+  }
+  #details {
+    width: 90%;     
+    margin-bottom: 1.5em; 
+  }
+  #details label {
+    padding: 3px;
+  }
+  input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin: 0.4em 0.2em;
+  }
+  #form-btn {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.25;
+    width: 50%;
+    height: 3.5em; 
+  }
+  .navigation-link {
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  }
+  .rest-name {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  .address, .telephone, .opening, .social-media {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* SCREEN 768px  */
+
+@media (max-width: 768px) {
+  .rest-name {
+    margin-left: 5px;
+    padding-right: 5px;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .hamburger {
+    display: block; /* shows hamburger button */
+  }
+  .navigation-list {
+      display: none; /* hidden nav ul */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 0px;
+      z-index: 100;
+  }
+  .navigation-list.open {
+    display: flex; 
+  }
+  .fusion-container {
+    min-height: 30vh;
+  }
+  #food-and-drinks {
+    margin: 3em;
+  }
+  .single-item {
+    margin: 1em;
+  }
+  .res-info {
+    min-width: 0;
+    width: 100%;
+    flex-shrink: 1.2;
+    margin: 0;
+  }
+  .playBtn {
+    display: block;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+  #contactBtn {
+    width: 35px;
+    height: 30px;
+    margin: 0.1em;
+  }
+  #backToTop {
+    width: 35px;
+    height: 30px;
+  }
+  #details {
+    width: 60%;
+    margin-bottom: 2em;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordionBtn {
+    display: block;
+    background-color:rgba(53, 48, 48, 0.9);
+    color: white;
+    padding: 0.5em;
+    margin: 0.15em 6em 0.5em 6em;
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+.panel {
+    display: none;
+    width: 12rem;
+  }
+footer h3 {
+  display: none;
+}
+.address, .telephone, .opening, .social-media {
+  width: 30%;
+  margin: 10px;
+  }  
+}
+@media (max-width: 1024px) {
+  /* tablets landscape, small laptops */
+  .res-info {
+    min-width: 0;
+    width: 100%;
+    flex-shrink: 1.2;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* large desktops */
+}
