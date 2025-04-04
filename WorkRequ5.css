@@ -1,5 +1,16 @@
 /* ----------- General Styles ------------------------- */
-/* :root {
+/*
+PROPERTIES TO MANAGE iOS DISPLAY:
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
+}
+
+ :root {
   --background-light-color: #F2F2F2;
   --light-gradient-background-color: #6b4939;
   --dark-gradient-background-color: #262323;
@@ -22,7 +33,8 @@
 body {
   font-family: Marcellus, Calibri, Arial, sans-serif;
   font-size: clamp(1rem, 1vw, 1.25rem);
-  padding: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -44,6 +56,7 @@ header {
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 .skip-link:focus-within,
 .skip-link:focus {
@@ -78,6 +91,7 @@ header {
 }
 .navigation-link {
   font-size: clamp(1rem, 2vw, 1.5rem);
+  -webkit-tap-highlight-color: transparent;
 }
 .navigation-link:not(:last-child) {
   border-right: 3px solid #262323;
@@ -90,6 +104,7 @@ header {
   font-weight: bolder;
   margin: 1.2em;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .nav-link:hover {
   text-decoration: underline;
@@ -99,7 +114,6 @@ header {
   outline: 2px solid #ff6600;
 }
 /* ------------------------- MAIN ----------------------- */
-/* ---- Welcome Animation ------------------------------------------------ */
 #welcome {
   display: flex;
   flex-direction: column;
@@ -107,7 +121,7 @@ header {
   justify-content: space-around;
   background-image: linear-gradient(to left, rgba(53, 48, 48, 0.9), #6b4939);
 }
-/* hero banner animation */
+/* ---- Welcome Animation ------------------------------------------------ */
 .fusion-container {
   position: relative;
   width: 100%;
@@ -190,6 +204,7 @@ svg {
   cursor: pointer;
   margin-bottom: 10px;
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .playBtn:focus {
   outline: 2px solid #007bff;
@@ -227,7 +242,7 @@ legend {
 }
 #details label {
   color: white;
-  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
   letter-spacing: 0.15rem;
   padding: 5px;
 }
@@ -267,6 +282,7 @@ input[type="checkbox"] {
   margin: 1em;
   cursor: pointer;
   border-radius: 12px;
+  -webkit-tap-highlight-color: transparent;
 }
 #form-btn:hover {
   background-color: #147a2e;
@@ -297,6 +313,7 @@ input[type="checkbox"] {
   background: none;
   border: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .accordionBtn:focus {
   outline: 2px solid #f2f2f2;
@@ -331,6 +348,7 @@ i {
 .social-media a {
   color: #262323;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .social-media a:hover {
   color: #3329bd;
@@ -355,6 +373,7 @@ i {
   opacity: 0; /* button inital state */
   visibility: hidden; /* button invisible */
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 .fab.show {
   opacity: 1;
@@ -368,6 +387,7 @@ i {
   background-color: #0c481a;
   cursor: pointer;
   font-weight: 800;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* style contact button */
@@ -375,6 +395,7 @@ i {
   background-color: #fc3256;
   cursor: pointer;
   bottom: 100px; /* space between buttons */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* MEDIA QUERIES */
@@ -432,13 +453,13 @@ i {
     margin: 0.4em 0.2em;
   }
   #form-btn {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 700;
     width: 50%;
     height: 3.5em;
   }
   .navigation-link {
-    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
   }
   .rest-name {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
