@@ -7,7 +7,7 @@
   --border-color-navigation: #262323;
   --font-color-on-dark-ground: white;
   --svg-pink-color: #ffbfc5;
-  --svg-blue-color: #b8e3dc
+  --svg-blue-color: #b8e3dc;
   --button-send-color: #cc2938;
   --svg-second-color: #ffbfc5;
   --contact-btn-color: #fc3256;
@@ -36,7 +36,7 @@ header {
 }
 /* skip links for accessibility */
 .skip-link {
-  background: #ddf2d8;
+  background: #262323;
   color: #f2f2f2;
   font-weight: 700;
   left: 50%;
@@ -167,8 +167,7 @@ svg {
 .single-item video {
   cursor: pointer;
   opacity: 0.7;
-  transition: opacity 0.3s ease;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease-in-out;
   border: 2px solid #f2f2f2;
   background-color: transparent;
   margin-bottom: 1.5em;
@@ -245,7 +244,7 @@ input:focus {
   outline: 2px solid rgb(165, 26, 10);
   outline-offset: 3px;
 }
-textarea ::placeholder {
+textarea::placeholder {
   color: black;
 }
 textarea:focus {
