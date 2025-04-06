@@ -398,6 +398,12 @@ input[type="checkbox"] {
 .fab:focus {
   outline: 2px solid #f2f2f2;
 }
+.fab i {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+}
 /* style back to top button */
 #backToTop {
   background-color: #0c481a;
